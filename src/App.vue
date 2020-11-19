@@ -1,23 +1,32 @@
 <template>
   <div>
-    <the-header></the-header>
-    <badge-list></badge-list>
-    <user-info
+    <TheHeader />
+    <BadgeList />
+    <UserInfo
       :full-name="activeUser.name"
       :info-text="activeUser.description"
       :role="activeUser.role"
-    ></user-info>
+    />
   </div>
 </template>
 
 <script>
+import TheHeader from "./components/TheHeader";
+import UserInfo from "./components/UserInfo";
+import BadgeList from "./components/BadgeList";
+
 export default {
+  components: {
+    TheHeader,
+    UserInfo,
+    BadgeList,
+  },
   data() {
     return {
       activeUser: {
-        name: 'Maximilian Schwarzmüller',
-        description: 'Site owner and admin',
-        role: 'admin',
+        name: "Maximilian Schwarzmüller",
+        description: "Site owner and admin",
+        role: "admin",
       },
     };
   },
