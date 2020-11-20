@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import TheHeader from "./components/TheHeader";
+import TheHeader from "./components/layout/TheHeader";
 // import UserInfo from "./components/UserInfo";
 // import BadgeList from "./components/BadgeList";
 // import CourseGoals from "./components/CourseGoals";
